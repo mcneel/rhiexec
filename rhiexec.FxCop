@@ -1,0 +1,1287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">c:\program files (x86)\microsoft fxcop 1.36\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/bin/x64/Debug/RhiExec.exe" Analyze="True" AnalyzeAllChildren="False">
+   <Modules AnalyzeAllChildren="False">
+    <Module Name="rhiexec.exe" Analyze="True" AnalyzeAllChildren="False">
+     <Namespaces AnalyzeAllChildren="False">
+      <Namespace Name="" Analyze="True" AnalyzeAllChildren="True" />
+      <Namespace Name="RMA.RhiExec" Analyze="True" AnalyzeAllChildren="True" />
+      <Namespace Name="RMA.RhiExec.Engine" Analyze="True" AnalyzeAllChildren="True" />
+      <Namespace Name="RMA.RhiExec.Model" Analyze="True" AnalyzeAllChildren="False">
+       <Types AnalyzeAllChildren="False">
+        <Type Name="ActiveUser" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="AssemblyResolver" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="CommandLineParser" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="CommandLineParserException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="GuidMismatchException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="InitException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="InstallerPhase" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="InstallerState" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="InstallException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="InvalidPlatformException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="LocalizationPackage" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+          <Member Name="#AllUsersInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#ContentType" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#CurrentUserInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Describe()" Analyze="True" />
+          <Member Name="#ID" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#InstallFolder(System.String)" Analyze="True" />
+          <Member Name="#IsCompatible(RMA.RhiExec.Model.RhinoInfo)" Analyze="True" />
+          <Member Name="#LoadManifest(System.String)" Analyze="True" />
+          <Member Name="#m_manifest" Analyze="True" />
+          <Member Name="#PackagePath" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#PackageVersion" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#ShouldReplaceFile(System.String,System.String)" Analyze="True" />
+          <Member Name="#Title" Analyze="True" AnalyzeAllChildren="True" />
+         </Members>
+        </Type>
+        <Type Name="LocalizationPackageManifest" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="LocalizedPackageManifest" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="ManfiestUnsupportedException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="ManifestException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="ManifestFileNotFoundException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="Options" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="Package" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PackageAuthoringException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PackageContentType" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PackageInstaller" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+          <Member Name="#AllUsersInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#CompareVersions(System.Version,System.Version)" Analyze="True" />
+          <Member Name="#ContentType" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#CurrentUserInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Describe()" Analyze="True" />
+          <Member Name="#GetAllInstalledVersions(System.String)" Analyze="True" />
+          <Member Name="#GetNewestVersionOfInstalledPackage(System.String)" Analyze="True" />
+          <Member Name="#GetPackageInstallState(System.Version)" Analyze="True" />
+          <Member Name="#ID" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#IsCompatible(RMA.RhiExec.Model.RhinoInfo)" Analyze="True" />
+          <Member Name="#PackagePath" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#PackageVersion" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#RemoveInvalidPathChars(System.String)" Analyze="True" />
+          <Member Name="#ReportProgress(System.String,RMA.RhiExec.LogLevel)" Analyze="True" />
+          <Member Name="#ShouldReplaceFile(System.String,System.String)" Analyze="True" />
+          <Member Name="#Title" Analyze="True" AnalyzeAllChildren="True" />
+         </Members>
+        </Type>
+        <Type Name="PackageManifest" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PackageNotCompatibleException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PackageNotFoundException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PluginInfo" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="PluginPackage" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+          <Member Name="#AllUsersInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#ContentType" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#CurrentUserInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Describe()" Analyze="True" />
+          <Member Name="#ExecutePluginInspector(System.String)" Analyze="True" />
+          <Member Name="#GetPluginInstallState(RMA.RhiExec.Model.PluginInfo)" Analyze="True" />
+          <Member Name="#ID" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#InspectPlugin(System.String)" Analyze="True" />
+          <Member Name="#IsCompatible(RMA.RhiExec.Model.RhinoInfo)" Analyze="True" />
+          <Member Name="#m_id" Analyze="True" />
+          <Member Name="#m_user" Analyze="True" />
+          <Member Name="#PackagePath" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#PackageVersion" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#PluginInstallFolder(System.String)" Analyze="True" />
+          <Member Name="#RegisterPlugin(RMA.RhiExec.Model.PluginInfo,RMA.RhiExec.Model.RhinoInfo)" Analyze="True" />
+          <Member Name="#Title" Analyze="True" AnalyzeAllChildren="True" />
+         </Members>
+        </Type>
+        <Type Name="PythonPackage" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+          <Member Name="#AllUsersInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#ClearPluginInfo()" Analyze="True" />
+          <Member Name="#ContentType" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#CurrentUserInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Describe()" Analyze="True" />
+          <Member Name="#ID" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#IsCompatible(RMA.RhiExec.Model.RhinoInfo)" Analyze="True" />
+          <Member Name="#m_info" Analyze="True" />
+          <Member Name="#PackageVersion" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Plugin" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Title" Analyze="True" AnalyzeAllChildren="True" />
+         </Members>
+        </Type>
+        <Type Name="PythonPluginInfo" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="RhinoInfo" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="RhinoInstallerException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="RhinoInstallState" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="RhinoVersionNotSupportedException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="TutorialPackage" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+          <Member Name="#AllUsersInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#ContentType" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#CurrentUserInstallFolder" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Describe()" Analyze="True" />
+          <Member Name="#ID" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#InstallFolder(System.String)" Analyze="True" />
+          <Member Name="#IsCompatible(RMA.RhiExec.Model.RhinoInfo)" Analyze="True" />
+          <Member Name="#LoadManifest(System.String)" Analyze="True" />
+          <Member Name="#m_manifest" Analyze="True" />
+          <Member Name="#PackagePath" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#PackageVersion" Analyze="True" AnalyzeAllChildren="True" />
+          <Member Name="#Title" Analyze="True" AnalyzeAllChildren="True" />
+         </Members>
+        </Type>
+        <Type Name="TutorialPackageManifest" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="UnsafeNativeMethods" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="UnsafeNativeMethods+GetGuidInvoke" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="UnsafeNativeMethods+GetIntegerInvoke" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="UnsafeNativeMethods+GetStringInvoke" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="UnsupportedPlatformException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="XmlHelper" Analyze="True" AnalyzeAllChildren="True" />
+       </Types>
+      </Namespace>
+      <Namespace Name="RMA.RhiExec.Properties" Analyze="True" AnalyzeAllChildren="True" />
+      <Namespace Name="RMA.RhiExec.View" Analyze="True" AnalyzeAllChildren="True" />
+     </Namespaces>
+     <Resources AnalyzeAllChildren="True" />
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="$(ProjectDir)/bin/x64/Release/rhiexec.exe" Analyze="False" AnalyzeAllChildren="False" />
+  <Target Name="$(ProjectDir)/bin/x86/Debug/rhiexec.exe" Analyze="False" AnalyzeAllChildren="False" />
+  <Target Name="$(ProjectDir)/bin/x86/Release/rhiexec.exe" Analyze="False" AnalyzeAllChildren="False" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="False">
+    <Rule Name="AbstractTypesShouldNotHaveConstructors" Enabled="True" />
+    <Rule Name="AssembliesShouldHaveValidStrongNames" Enabled="True" />
+    <Rule Name="AvoidEmptyInterfaces" Enabled="True" />
+    <Rule Name="AvoidExcessiveParametersOnGenericTypes" Enabled="True" />
+    <Rule Name="AvoidNamespacesWithFewTypes" Enabled="True" />
+    <Rule Name="AvoidOutParameters" Enabled="True" />
+    <Rule Name="CollectionsShouldImplementGenericInterface" Enabled="True" />
+    <Rule Name="ConsiderPassingBaseTypesAsParameters" Enabled="True" />
+    <Rule Name="DeclareEventHandlersCorrectly" Enabled="True" />
+    <Rule Name="DeclareTypesInNamespaces" Enabled="True" />
+    <Rule Name="DefaultParametersShouldNotBeUsed" Enabled="True" />
+    <Rule Name="DefineAccessorsForAttributeArguments" Enabled="True" />
+    <Rule Name="DoNotDeclareProtectedMembersInSealedTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareStaticMembersOnGenericTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareVirtualMembersInSealedTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareVisibleInstanceFields" Enabled="True" />
+    <Rule Name="DoNotExposeGenericLists" Enabled="True" />
+    <Rule Name="DoNotHideBaseClassMethods" Enabled="True" />
+    <Rule Name="DoNotNestGenericTypesInMemberSignatures" Enabled="True" />
+    <Rule Name="DoNotOverloadOperatorEqualsOnReferenceTypes" Enabled="True" />
+    <Rule Name="DoNotPassTypesByReference" Enabled="True" />
+    <Rule Name="DoNotRaiseExceptionsInUnexpectedLocations" Enabled="True" />
+    <Rule Name="EnumeratorsShouldBeStronglyTyped" Enabled="True" />
+    <Rule Name="EnumsShouldHaveZeroValue" Enabled="True" />
+    <Rule Name="EnumStorageShouldBeInt32" Enabled="True" />
+    <Rule Name="ExceptionsShouldBePublic" Enabled="True" />
+    <Rule Name="GenericMethodsShouldProvideTypeParameter" Enabled="True" />
+    <Rule Name="ICollectionImplementationsHaveStronglyTypedMembers" Enabled="True" />
+    <Rule Name="ImplementIDisposableCorrectly" Enabled="True" />
+    <Rule Name="IndexersShouldNotBeMultidimensional" Enabled="True" />
+    <Rule Name="InterfaceMethodsShouldBeCallableByChildTypes" Enabled="True" />
+    <Rule Name="ListsAreStronglyTyped" Enabled="True" />
+    <Rule Name="MarkAssembliesWithAssemblyVersion" Enabled="True" />
+    <Rule Name="MarkAssembliesWithClsCompliant" Enabled="True" />
+    <Rule Name="MarkAssembliesWithComVisible" Enabled="True" />
+    <Rule Name="MarkAttributesWithAttributeUsage" Enabled="True" />
+    <Rule Name="MarkEnumsWithFlags" Enabled="True" />
+    <Rule Name="MembersShouldNotExposeCertainConcreteTypes" Enabled="True" />
+    <Rule Name="MovePInvokesToNativeMethodsClass" Enabled="True" />
+    <Rule Name="NestedTypesShouldNotBeVisible" Enabled="True" />
+    <Rule Name="OverloadOperatorEqualsOnOverloadingAddAndSubtract" Enabled="True" />
+    <Rule Name="OverrideMethodsOnComparableTypes" Enabled="True" />
+    <Rule Name="PropertiesShouldNotBeWriteOnly" Enabled="True" />
+    <Rule Name="ProvideObsoleteAttributeMessage" Enabled="True" />
+    <Rule Name="ReplaceRepetitiveArgumentsWithParamsArray" Enabled="True" />
+    <Rule Name="StaticHolderTypesShouldBeSealed" Enabled="True" />
+    <Rule Name="StaticHolderTypesShouldNotHaveConstructors" Enabled="True" />
+    <Rule Name="StringUriOverloadsCallSystemUriOverloads" Enabled="True" />
+    <Rule Name="TypesShouldNotExtendCertainBaseTypes" Enabled="True" />
+    <Rule Name="TypesThatOwnDisposableFieldsShouldBeDisposable" Enabled="True" />
+    <Rule Name="TypesThatOwnNativeResourcesShouldBeDisposable" Enabled="True" />
+    <Rule Name="UriParametersShouldNotBeStrings" Enabled="True" />
+    <Rule Name="UriPropertiesShouldNotBeStrings" Enabled="True" />
+    <Rule Name="UriReturnValuesShouldNotBeStrings" Enabled="True" />
+    <Rule Name="UseEventsWhereAppropriate" Enabled="True" />
+    <Rule Name="UseGenericEventHandlerInstances" Enabled="True" />
+    <Rule Name="UseGenericsWhereAppropriate" Enabled="True" />
+    <Rule Name="UseIntegralOrStringArgumentForIndexers" Enabled="True" />
+    <Rule Name="UsePropertiesWhereAppropriate" Enabled="True" />
+   </RuleFile>
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Namespaces>
+   <Namespace Name="RMA.RhiExec">
+    <Messages>
+     <Message Id="RMA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>RMA</Item>
+       <Item>RMA.RhiExec</Item>
+       <Item>Rma</Item>
+      </Issue>
+     </Message>
+     <Message Id="Rhi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>Rhi</Item>
+       <Item>RMA.RhiExec</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="RMA.RhiExec.Engine">
+    <Messages>
+     <Message Id="RMA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>RMA</Item>
+       <Item>RMA.RhiExec.Engine</Item>
+       <Item>Rma</Item>
+      </Issue>
+     </Message>
+     <Message Id="Rhi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>Rhi</Item>
+       <Item>RMA.RhiExec.Engine</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="RMA.RhiExec.Model">
+    <Messages>
+     <Message Id="RMA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>RMA</Item>
+       <Item>RMA.RhiExec.Model</Item>
+       <Item>Rma</Item>
+      </Issue>
+     </Message>
+     <Message Id="Rhi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>Rhi</Item>
+       <Item>RMA.RhiExec.Model</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="RMA.RhiExec.View">
+    <Messages>
+     <Message Id="RMA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>RMA</Item>
+       <Item>RMA.RhiExec.View</Item>
+       <Item>Rma</Item>
+      </Issue>
+     </Message>
+     <Message Id="Rhi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:53:49Z">
+      <Issue Name="Namespace">
+       <Item>Rhi</Item>
+       <Item>RMA.RhiExec.View</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/bin/x64/Debug/RhiExec.exe">
+    <Modules>
+     <Module Name="rhiexec.exe">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Excluded" Created="2010-04-06 21:29:07Z">
+        <Issue Name="NoStrongName">
+         <Item>'RhiExec.exe'</Item>
+        </Issue>
+       </Message>
+       <Message Id="Rhi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 21:29:07Z">
+        <Issue Name="Assembly">
+         <Item>Rhi</Item>
+         <Item>'RhiExec.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Excluded" Created="2010-04-06 21:29:07Z">
+        <Issue>
+         <Item>'RhiExec.exe'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="RMA.RhiExec">
+        <Types>
+         <Type Name="Logger">
+          <Members>
+           <Member Name="#Log(RMA.RhiExec.LogLevel,System.String)">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'Logger.Log(LogLevel, string)'</Item>
+               <Item>'Process.GetCurrentProcess()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'Logger.Log(LogLevel, string)'</Item>
+               <Item>'Process.Id.get()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="RMA.RhiExec.Engine">
+        <Types>
+         <Type Name="InstallerEngine">
+          <Members>
+           <Member Name="#.cctor()">
+            <Messages>
+             <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'InstallerEngine'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="OSPlatform">
+          <Members>
+           <Member Name="#x64">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>x</Item>
+               <Item>'OSPlatform.x64'</Item>
+               <Item>X</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#x86">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>x</Item>
+               <Item>'OSPlatform.x86'</Item>
+               <Item>X</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="RhinoInitializer">
+          <Members>
+           <Member Name="#m_sdkversion">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2010-04-10 00:24:55Z">
+              <Issue>
+               <Item>'RhinoInitializer.m_sdkversion'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="RhinoPlatform">
+          <Members>
+           <Member Name="#Rhino4_win32">
+            <Messages>
+             <Message Id="win" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>win</Item>
+               <Item>'RhinoPlatform.Rhino4_win32'</Item>
+               <Item>Win</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>'RhinoPlatform.Rhino4_win32'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Rhino5_win32">
+            <Messages>
+             <Message Id="win" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>win</Item>
+               <Item>'RhinoPlatform.Rhino5_win32'</Item>
+               <Item>Win</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>'RhinoPlatform.Rhino5_win32'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Rhino5_win64">
+            <Messages>
+             <Message Id="win" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>win</Item>
+               <Item>'RhinoPlatform.Rhino5_win64'</Item>
+               <Item>Win</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>'RhinoPlatform.Rhino5_win64'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="RMA.RhiExec.Model">
+        <Types>
+         <Type Name="CommandLineParserException">
+          <Messages>
+           <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Excluded" Created="2010-04-06 21:29:07Z">
+            <Issue Certainty="95" Level="Error">
+             <Item>'CommandLineParserException'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="GuidMismatchException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'GuidMismatchException.GuidMismatchException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InitException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'InitException.InitException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InstallException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'InstallException.InstallException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InvalidPlatformException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'InvalidPlatformException.InvalidPlatformException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ManfiestUnsupportedException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'ManfiestUnsupportedException.ManfiestUnsupportedException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ManifestException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'ManifestException.ManifestException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ManifestFileNotFoundException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'ManifestFileNotFoundException.ManifestFileNotFoundException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Options">
+          <Members>
+           <Member Name="#SetOptions(System.String[])">
+            <Messages>
+             <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Excluded" Created="2010-04-10 00:24:55Z">
+              <Issue Name="ToUpperInvariant">
+               <Item>'Options.SetOptions(string[])'</Item>
+               <Item>'string.ToLowerInvariant()'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Brian">
+                <Note Id="4" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageAuthoringException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'PackageAuthoringException.PackageAuthoringException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageContentType">
+          <Members>
+           <Member Name="#Plugin">
+            <Messages>
+             <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Member">
+               <Item>Plugin</Item>
+               <Item>'PackageContentType.Plugin'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageNotCompatibleException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'PackageNotCompatibleException.PackageNotCompatibleException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageNotFoundException">
+          <Messages>
+           <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Created="2010-04-10 00:24:55Z">
+            <Issue>
+             <Item>'PackageNotFoundException'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'PackageNotFoundException.PackageNotFoundException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PluginInfo">
+          <Members>
+           <Member Name="#CompatibleRhinoInstalled">
+            <Accessors>
+             <Accessor Name="#set_CompatibleRhinoInstalled(RMA.RhiExec.Model.RhinoInstallState)">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+                <Issue>
+                 <Item>'PluginInfo.CompatibleRhinoInstalled.set(RhinoInstallState)'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#Describe()">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'PluginInfo.Describe()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="RhinoInstallerException">
+          <Messages>
+           <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Excluded" Created="2010-04-06 21:29:07Z">
+            <Issue Certainty="95" Level="Error">
+             <Item>'RhinoInstallerException'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="RhinoVersionNotSupportedException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'RhinoVersionNotSupportedException.RhinoVersionNotSupportedException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="UnsafeNativeMethods">
+          <Members>
+           <Member Name="#GetProcAddress(System.IntPtr,System.String)">
+            <Messages>
+             <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Excluded" Created="2010-04-10 00:24:55Z">
+              <Issue Name="ParameterImplicitAnsi">
+               <Item>'procName'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Brian">
+                <Note Id="5" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="UnsupportedPlatformException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue>
+               <Item>'UnsupportedPlatformException.UnsupportedPlatformException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="XmlHelper">
+          <Members>
+           <Member Name="#AppendElement(System.Xml.XmlNode,System.String,System.String)">
+            <Messages>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Xml">
+               <Item>'XmlHelper.AppendElement(XmlNode, string, string)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelectSingleNodeInnerText(System.Xml.XmlNode,System.String)">
+            <Messages>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Xml">
+               <Item>'XmlHelper.SelectSingleNodeInnerText(XmlNode, string)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelectSingleNodeInnerText(System.Xml.XmlNode,System.String,System.String)">
+            <Messages>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Status="Excluded" Created="2010-04-06 21:29:07Z">
+              <Issue Name="Xml">
+               <Item>'XmlHelper.SelectSingleNodeInnerText(XmlNode, string, string)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/bin/x86/Release/rhiexec.exe">
+    <Modules>
+     <Module Name="rhiexec.exe">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Excluded" Created="2010-04-06 02:49:27Z">
+        <Issue Name="NoStrongName">
+         <Item>'rhiexec.exe'</Item>
+        </Issue>
+       </Message>
+       <Message Id="Rhi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:53:49Z">
+        <Issue Name="Assembly">
+         <Item>Rhi</Item>
+         <Item>'rhiexec.exe'</Item>
+        </Issue>
+       </Message>
+       <Message Id="rhiexec" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:49:27Z">
+        <Issue Name="Assembly">
+         <Item>rhiexec</Item>
+         <Item>'rhiexec.exe'</Item>
+        </Issue>
+        <Notes>
+         <User Name="Brian">
+          <Note Id="0" />
+         </User>
+        </Notes>
+       </Message>
+       <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Excluded" Created="2010-04-06 02:49:27Z">
+        <Issue>
+         <Item>'rhiexec.exe'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="RMA.RhiExec">
+        <Types>
+         <Type Name="Logger">
+          <Members>
+           <Member Name="#Log(RMA.RhiExec.LogLevel,System.String)">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Excluded" Created="2010-04-06 02:53:49Z">
+              <Issue>
+               <Item>'Logger.Log(LogLevel, string)'</Item>
+               <Item>'Process.GetCurrentProcess()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'Logger.Log(LogLevel, string)'</Item>
+               <Item>'Process.Id.get()'</Item>
+               <Item>&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'&#xD;&#xA;   -&gt;'Logger.Log(LogLevel, string)'</Item>
+              </Issue>
+              <Notes>
+               <User Name="Brian">
+                <Note Id="1" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="RMA.RhiExec.Engine">
+        <Types>
+         <Type Name="InstallerEngine">
+          <Members>
+           <Member Name="#.cctor()">
+            <Messages>
+             <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Excluded" Created="2010-04-06 02:53:49Z">
+              <Issue>
+               <Item>'InstallerEngine'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="OSPlatform">
+          <Members>
+           <Member Name="#x64">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 03:33:27Z">
+              <Issue Name="Member">
+               <Item>x</Item>
+               <Item>'OSPlatform.x64'</Item>
+               <Item>X</Item>
+              </Issue>
+              <Notes>
+               <User Name="Brian">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#x86">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 03:33:27Z">
+              <Issue Name="Member">
+               <Item>x</Item>
+               <Item>'OSPlatform.x86'</Item>
+               <Item>X</Item>
+              </Issue>
+              <Notes>
+               <User Name="Brian">
+                <Note Id="3" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="RhinoPlatform">
+          <Members>
+           <Member Name="#Rhino4_win32">
+            <Messages>
+             <Message Id="win" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue Name="Member">
+               <Item>win</Item>
+               <Item>'RhinoPlatform.Rhino4_win32'</Item>
+               <Item>Win</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue Name="Member">
+               <Item>'RhinoPlatform.Rhino4_win32'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Rhino5_win32">
+            <Messages>
+             <Message Id="win" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue Name="Member">
+               <Item>win</Item>
+               <Item>'RhinoPlatform.Rhino5_win32'</Item>
+               <Item>Win</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue Name="Member">
+               <Item>'RhinoPlatform.Rhino5_win32'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Rhino5_win64">
+            <Messages>
+             <Message Id="win" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue Name="Member">
+               <Item>win</Item>
+               <Item>'RhinoPlatform.Rhino5_win64'</Item>
+               <Item>Win</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue Name="Member">
+               <Item>'RhinoPlatform.Rhino5_win64'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="RMA.RhiExec.Model">
+        <Types>
+         <Type Name="CommandLineParserException">
+          <Messages>
+           <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Excluded" Created="2010-04-06 03:40:24Z">
+            <Issue Certainty="95" Level="Error">
+             <Item>'CommandLineParserException'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="GuidMismatchException">
+          <Messages>
+           <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Excluded" Created="2010-04-06 02:53:49Z">
+            <Issue Name="MissingConstructor">
+             <Item>'GuidMismatchException'</Item>
+             <Item>protected GuidMismatchException(SerializationInfo, StreamingContext)</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'GuidMismatchException.GuidMismatchException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InitException">
+          <Messages>
+           <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Excluded" Created="2010-04-06 02:53:49Z">
+            <Issue Name="MissingConstructor">
+             <Item>'InitException'</Item>
+             <Item>protected InitException(SerializationInfo, StreamingContext)</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'InitException.InitException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InstallException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 18:58:16Z">
+              <Issue>
+               <Item>'InstallException.InstallException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="InvalidPlatformException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'InvalidPlatformException.InvalidPlatformException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ManfiestUnsupportedException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'ManfiestUnsupportedException.ManfiestUnsupportedException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ManifestException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'ManifestException.ManifestException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ManifestFileNotFoundException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 18:33:42Z">
+              <Issue>
+               <Item>'ManifestFileNotFoundException.ManifestFileNotFoundException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageAuthoringException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 18:58:16Z">
+              <Issue>
+               <Item>'PackageAuthoringException.PackageAuthoringException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageContentType">
+          <Members>
+           <Member Name="#Plugin">
+            <Messages>
+             <Message Id="Plugin" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2010-04-06 02:53:49Z">
+              <Issue Name="Member">
+               <Item>Plugin</Item>
+               <Item>'PackageContentType.Plugin'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageNotCompatibleException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'PackageNotCompatibleException.PackageNotCompatibleException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PackageNotFoundException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'PackageNotFoundException.PackageNotFoundException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PluginInfo">
+          <Members>
+           <Member Name="#CompatibleRhinoInstalled">
+            <Accessors>
+             <Accessor Name="#set_CompatibleRhinoInstalled(RMA.RhiExec.Model.RhinoInstallState)">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+                <Issue>
+                 <Item>'PluginInfo.CompatibleRhinoInstalled.set(RhinoInstallState)'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#Describe()">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'PluginInfo.Describe()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="RhinoInstallerException">
+          <Messages>
+           <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Excluded" Created="2010-04-06 02:53:49Z">
+            <Issue Certainty="95" Level="Error">
+             <Item>'RhinoInstallerException'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'RhinoInstallerException.RhinoInstallerException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="RhinoVersionNotSupportedException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'RhinoVersionNotSupportedException.RhinoVersionNotSupportedException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="UnsupportedPlatformException">
+          <Members>
+           <Member Name="#.ctor(System.String,System.Exception)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Excluded" Created="2010-04-06 17:00:53Z">
+              <Issue>
+               <Item>'UnsupportedPlatformException.UnsupportedPlatformException(string, Exception)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="XmlHelper">
+          <Members>
+           <Member Name="#AppendElement(System.Xml.XmlNode,System.String,System.String)">
+            <Messages>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Status="Excluded" Created="2010-04-06 02:53:49Z">
+              <Issue Name="Xml">
+               <Item>'XmlHelper.AppendElement(XmlNode, string, string)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelectSingleNodeInnerText(System.Xml.XmlNode,System.String)">
+            <Messages>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Status="Excluded" Created="2010-04-06 02:53:49Z">
+              <Issue Name="Xml">
+               <Item>'XmlHelper.SelectSingleNodeInnerText(XmlNode, string)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelectSingleNodeInnerText(System.Xml.XmlNode,System.String,System.String)">
+            <Messages>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Status="Excluded" Created="2010-04-06 02:53:49Z">
+              <Issue Name="Xml">
+               <Item>'XmlHelper.SelectSingleNodeInnerText(XmlNode, string, string)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="Brian">
+    <Note Id="0" Modified="2010-04-06 02:49:59Z">rhiexec is the name of this project.</Note>
+    <Note Id="1" Modified="2010-04-06 02:59:42Z">GetCurrentProcess is used just to get the process ID and is not dangerous.</Note>
+    <Note Id="2" Modified="2010-04-06 03:34:21Z">x86 and x64 seem better to me.</Note>
+    <Note Id="3" Modified="2010-04-06 03:34:26Z">x86 and x64 seem better to me.</Note>
+    <Note Id="4" Modified="2010-04-10 00:27:55Z">This is necessary to change a string to mixed case.</Note>
+    <Note Id="5" Modified="2010-04-10 00:28:31Z">This doesn't actually work!</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+    <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+    <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+    <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+    <Resolution Name="Default">{0} calls into {1} which has a LinkDemand. By making this call, {1} is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: {2}</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+    <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   </Rule>
+   <Rule TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032">
+    <Resolution Name="MissingConstructor" />
+   </Rule>
+   <Rule TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810">
+    <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+    <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+    <Resolution Name="Default">Add [Serializable] to {0} as this type implements ISerializable.</Resolution>
+   </Rule>
+   <Rule TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059">
+    <Resolution Name="Xml">Modify member {0} so that it no longer exposes the concrete type {1}. Use IXPathNavigable to represent XML data sources.</Resolution>
+   </Rule>
+   <Rule TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308">
+    <Resolution Name="ToUpperInvariant">In method {0}, replace the call to {1} with String.ToUpperInvariant().</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+    <Resolution Name="ParameterImplicitAnsi">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
