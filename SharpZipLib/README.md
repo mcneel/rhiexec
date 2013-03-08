@@ -1,0 +1,1 @@
+Download SharpZipLib from http://www.icsharpcode.net/opensource/sharpziplib/Download.aspx and extract it into this folder.
